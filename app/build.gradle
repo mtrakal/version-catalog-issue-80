@@ -80,14 +80,14 @@ dependencies {
 
     // Koin
     // Koin main features for Android (Scope,ViewModel ...)
-    implementation(libs.io.insert.koin.koin.android)
+//    implementation(libs.io.insert.koin.koin.android)
     // Koin for Jetpack WorkManager
-    implementation(libs.io.insert.koin.koin.androidx.workmanager)
+//    implementation(libs.io.insert.koin.koin.androidx.workmanager)
     // Koin for Navigation Graph
-    implementation(libs.io.insert.koin.koin.androidx.navigation)
+//    implementation(libs.io.insert.koin.koin.androidx.navigation)
     // Koin KSP
-    implementation(libs.io.insert.koin.koin.android.annotations)
-    ksp(libs.io.insert.koin.koin.ksp.compiler)
+//    implementation(libs.io.insert.koin.koin.android.annotations)
+//    ksp(libs.io.insert.koin.koin.ksp.compiler)
 
     // Epoxy
     implementation(libs.com.airbnb.android.epoxy)
@@ -113,14 +113,14 @@ dependencies {
     ksp(libs.androidx.room.room.compiler)
 
     // Work
-    implementation(libs.androidx.work.work.runtime.ktx)
+//    implementation(libs.androidx.work.work.runtime.ktx)
 
     // Gson
     implementation(libs.com.google.code.gson)
     implementation(libs.com.squareup.moshi)
     implementation(libs.com.squareup.moshi.moshi.kotlin)
     implementation(libs.com.squareup.moshi.moshi.adapters)
-    kapt(libs.com.squareup.moshi.moshi.kotlin.codegen)
+//    kapt(libs.com.squareup.moshi.moshi.kotlin.codegen)
 
     // Retrofit 2
     implementation(libs.com.squareup.retrofit2.retrofit)
@@ -162,11 +162,11 @@ dependencies {
     implementation(libs.io.github.chaosleung.pinview)
 
     // keyboard watcher
-    implementation(libs.net.yslibrary.keyboardvisibilityevent)
+//    implementation(libs.net.yslibrary.keyboardvisibilityevent)
 
     // Facebook
-    implementation(libs.com.facebook.android.facebook.login)
-    implementation(libs.com.facebook.android.facebook.android.sdk)
+//    implementation(libs.com.facebook.android.facebook.login)
+//    implementation(libs.com.facebook.android.facebook.android.sdk)
 
     // Google maps utils
     implementation(libs.com.google.maps.android.android.maps.utils)
@@ -187,45 +187,45 @@ dependencies {
     // https.//github.com/braintree/braintree_android/releases
 
     // https.//github.com/braintree/braintree-android-drop-in/releases
-    implementation(libs.com.braintreepayments.api.drop.in)
+//    implementation(libs.com.braintreepayments.api.drop.in)
 
     // to offer card payments
-    implementation(libs.com.braintreepayments.api.card)
+//    implementation(libs.com.braintreepayments.api.card)
     // to collect device data
-    implementation(libs.com.braintreepayments.api.data.collector)
+//    implementation(libs.com.braintreepayments.api.data.collector)
     // to offer PayPal
-    implementation(libs.com.braintreepayments.api.paypal)
+//    implementation(libs.com.braintreepayments.api.paypal)
     // to offer local payments
-    implementation(libs.com.braintreepayments.api.local.payment)
+//    implementation(libs.com.braintreepayments.api.local.payment)
     // to offer Google Pay
-    implementation(libs.com.braintreepayments.api.google.pay)
+//    implementation(libs.com.braintreepayments.api.google.pay)
     // to perform 3DS verification
     // https.//developer.paypal.com/braintree/docs/guides/3d-secure/client-side/android/v4
-    implementation(libs.com.braintreepayments.api.three.d.secure)
+//    implementation(libs.com.braintreepayments.api.three.d.secure)
 
 
     // CountryCode Picker
     implementation(libs.com.github.joielechong.countrycodepicker)
 
     // Camera
-    implementation(libs.androidx.camera.camera.camera2)
-    implementation(libs.androidx.camera.camera.lifecycle)
-    implementation(libs.androidx.camera.camera.view)
-    implementation(libs.androidx.camera.camera.extensions)
+//    implementation(libs.androidx.camera.camera.camera2)
+//    implementation(libs.androidx.camera.camera.lifecycle)
+//    implementation(libs.androidx.camera.camera.view)
+//    implementation(libs.androidx.camera.camera.extensions)
 
     // Firebase
-    implementation platform(libs.com.google.firebase.firebase.bom)
-    implementation(libs.com.google.firebase.firebase.iid)
-    implementation(libs.com.google.firebase.firebase.messaging.ktx)
-    implementation(libs.com.google.firebase.firebase.config.ktx)
-    implementation(libs.com.google.firebase.firebase.core)
-    implementation(libs.com.google.firebase.firebase.dynamic.links.ktx)
-    implementation(libs.com.google.firebase.firebase.auth.ktx)
-    implementation(libs.com.google.firebase.firebase.analytics.ktx)
-    implementation(libs.com.google.firebase.firebase.database.ktx)
-    implementation(libs.com.google.firebase.firebase.firestore.ktx)
-    implementation(libs.com.google.firebase.firebase.crashlytics.ktx)
-    implementation(libs.com.google.firebase.firebase.perf.ktx)
+//    implementation platform(libs.com.google.firebase.firebase.bom)
+//    implementation(libs.com.google.firebase.firebase.iid)
+//    implementation(libs.com.google.firebase.firebase.messaging.ktx)
+//    implementation(libs.com.google.firebase.firebase.config.ktx)
+//    implementation(libs.com.google.firebase.firebase.core)
+//    implementation(libs.com.google.firebase.firebase.dynamic.links.ktx)
+//    implementation(libs.com.google.firebase.firebase.auth.ktx)
+//    implementation(libs.com.google.firebase.firebase.analytics.ktx)
+//    implementation(libs.com.google.firebase.firebase.database.ktx)
+//    implementation(libs.com.google.firebase.firebase.firestore.ktx)
+//    implementation(libs.com.google.firebase.firebase.crashlytics.ktx)
+//    implementation(libs.com.google.firebase.firebase.perf.ktx)
 
     // Material dialogs
     implementation(libs.com.afollestad.material.dialogs.datetime)
@@ -237,20 +237,20 @@ dependencies {
     implementation(libs.io.github.g00fy2.versioncompare)
 
     // Lokalise - https.//maven.lokalise.com/com/lokalise/android/sdk/
-    implementation(libs.com.lokalise.android.sdk) {
-        transitive = true
-    }
+//    implementation(libs.com.lokalise.android.sdk) {
+//        transitive = true
+//    }
 
     // Stetho
-    debugImplementation(libs.com.facebook.stetho)
-    implementation(libs.com.facebook.stetho.stetho.okhttp3)
+//    debugImplementation(libs.com.facebook.stetho)
+//    implementation(libs.com.facebook.stetho.stetho.okhttp3)
 
     // Navigation
     implementation(libs.androidx.navigation.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.navigation.ui.ktx)
 
     // Security - crypto
-    implementation(libs.androidx.security.security.crypto)
+//    implementation(libs.androidx.security.security.crypto)
 
     // View
     implementation(libs.com.airbnb.android.lottie)
@@ -259,7 +259,7 @@ dependencies {
     implementation(libs.com.github.chrisbanes.PhotoView)
 
     // https.//github.com/mapbox/mapbox-search-android/releases
-    implementation(libs.com.mapbox.search.mapbox.search.android)
+//    implementation(libs.com.mapbox.search.mapbox.search.android)
 
     // core moengage features
     implementation(moengage.core)
