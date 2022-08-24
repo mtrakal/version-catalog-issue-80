@@ -1,0 +1,23 @@
+// To integrate Ben Manes Versions add this to top-level build.gradle file:
+//buildscript {
+//    dependencies {
+//        classpath "com.github.ben-manes:gradle-versions-plugin:0.38.0"
+//    }
+//}
+//apply from: 'config/ben-manes-versions.gradle'
+
+apply plugin: "com.github.ben-manes.versions"
+
+// Ben-manes Gradle version plugin
+def isNonStable = { String version ->
+    def stableKeyword = ['FINAL', 'GA'].any { it -> version.toUpperCase().contains(it) }
+    def regex = /^[0-9,.v-]+(-r)?$/
+    return !stableKeyword && !(version ==~ regex)
+}
+
+dependencyUpdates {
+    rejectVersionIf {
+        isNonStable(it.candidate.version)
+    }
+    checkConstraints = true
+}
